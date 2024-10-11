@@ -38,8 +38,8 @@ let chart; // Variable global para el gráfico
 // Iniciar pruebas con botón
 document.getElementById('startBtn').addEventListener('click', () => {
     let numTests = 10;
-    let minVal = 100000;
-    let maxVal = 1000000;
+    let minVal = 10000;
+    let maxVal = 100000;
     let increment = Math.floor((maxVal - minVal) / (numTests - 1));
 
     let testSizes = [];
@@ -51,7 +51,7 @@ document.getElementById('startBtn').addEventListener('click', () => {
         let arraySize;
 
         if (i === numTests) {
-            arraySize = 1000000;
+            arraySize = 100000;
         } else {
             arraySize = minVal + (i - 1) * increment;
         }
